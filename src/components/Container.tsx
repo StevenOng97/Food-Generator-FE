@@ -204,6 +204,7 @@ const Container = () => {
           <DebounceInput
             className="form-control"
             type="text"
+            disabled={loading}
             onChange={(e) => {
               if (!isDisplay && suggestionFood.length > 0) {
                 setDisplay(true);
